@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+
+</body>
+<script>
+let a=parseInt(prompt("Enter your number"))
+let b=a,c=a
+let sum=0
+let count=0
+while(a!=0){
+    let rem=a%10
+    a=(a-rem)/10
+count++
+}
+
+while(b!=0){
+    let rem=b%10
+    b=(b-rem)/10
+    sum=sum+(rem**count)
+    console.log(sum)
+}
+if(c==sum){
+   document.write(c,"is the amstrong number")
+}
+else{
+   document.write(c,"is not a amstrong number")
+}
+</script>
+</html>
